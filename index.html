@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Lautaro Martinez</title>
+    <!-- Agrega los enlaces a los archivos de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="#">Lautaro Martinez</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sobre mí</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Sección principal -->
+    <section class="jumbotron text-center profileSection">
+        <div class="container">
+            <img class="myPicture" src="img/me.jpg" alt="">
+            <h1 class="display-4 titles">Lautaro Martinez</h1>
+            <p class="lead titles">Full Stack Developer</p>
+
+        </div>
+    </section>
+
+    <!-- PORTFOLIO SECTION -->
+
+    <section class="portfolio">
+        <h2 class="text-center mb-4 titles"> Mis proyectos </h2>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Moustache Cervecería</h5>
+                        <img src="https://www.w3.org/html/logo/badge/html5-badge-h-solo.png" width="64" height="64"
+                            alt="HTML5 logo">
+                        <p class="card-text mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Kige Games</h5>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/200px-CSS3_logo_and_wordmark.svg.png"
+                            width="64" height="64" alt="CSS3 logo">
+                        <p class="card-text mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Bosqueviejo Drinks</h5>
+                        <img src="https://www.w3.org/html/logo/badge/html5-badge-h-solo.png" width="64" height="64"
+                            alt="HTML5 logo">
+                        <p class="card-text mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Oldbox</h5>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/200px-CSS3_logo_and_wordmark.svg.png"
+                            width="64" height="64" alt="CSS3 logo">
+                        <p class="card-text mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Sección de tecnologías -->
+    <section class="container">
+        <h2 class="text-center mb-4 titles">Tecnologías que manejo</h2>
+        <div class="row">
+            <div class="col-md-4 mb-5">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">HTML</h5>
+                        <img src="https://www.w3.org/html/logo/badge/html5-badge-h-solo.png" width="64" height="64"
+                            alt="HTML5 logo">
+                        <p class="card-text mt-3">Conozco bien la estructura básica de las páginas web y cómo utilizar
+                            sus elementos principales.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-5">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">CSS</h5>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/200px-CSS3_logo_and_wordmark.svg.png"
+                            width="64" height="64" alt="CSS3 logo">
+                        <p class="card-text mt-3"> Tengo experiencia en estilos y etc </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de contacto -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 mx-auto">
+                <div class="card mt-5 contact-form">
+                    <div class="card-body">
+                        <h3 class="card-title text-center mb-4 text-light">Contacto</h3>
+                        <form>
+                            <div class="form-group">
+                                <h5 for="nombre" class="text-light">Nombre completo</h5>
+                                <input type="text" class="form-control text-light" id="nombre"
+                                    placeholder="Escribe tu nombre completo">
+                            </div>
+                            <div class="form-group">
+                                <h5 for="email" class="text-light">Correo electrónico</h5>
+                                <input type="email" class="form-control text-light" id="email"
+                                    placeholder="Escribe tu correo electrónico">
+                            </div>
+                            <div class="form-group">
+                                <h5 for="telefono" class="text-light">Teléfono</h5>
+                                <input type="tel" class="form-control text-light " id="telefono"
+                                    placeholder="Escribe tu número de teléfono">
+                            </div>
+                            <div class="form-group">
+                                <h5 for="mensaje" class="text-light">Mensaje</h5>
+                                <textarea class="form-control text-light" id="mensaje" rows="5"
+                                    placeholder="Escribe tu mensaje"></textarea>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn">Enviar mensaje</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-light py-3">
+        <div class="container text-center">
+            <p>Todos los derechos reservados © Lautaro Martinez 2023</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
