@@ -14,6 +14,10 @@
     <!-- Agrega los enlaces a los archivos de Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -33,13 +37,13 @@
                         <a class="nav-link active text-light" aria-current="page" href="#">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="#">Proyectos</a>
+                        <a class="nav-link text-light" href="#misProyectos">Proyectos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="#">Sobre mí</a>
+                        <a class="nav-link text-light" href="#misTecnologias">Sobre mí</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="#">Contacto</a>
+                        <a class="nav-link text-light" href="#contactForm">Contacto</a>
                     </li>
                 </ul>
             </div>
@@ -59,7 +63,7 @@
 
     <!-- PORTFOLIO SECTION -->
 
-    <section class="container portfolio">
+    <section class="container portfolio" id="misProyectos">
         <h2 class="text-center mb-4 titles"> Mis proyectos </h2>
         <div class="row">
             <div class="col-md-6 mb-4">
@@ -224,11 +228,12 @@
 
 
     <!-- Sección de tecnologías -->
-    <section class="container">
+
+    <section class="container" id="misTecnologias">
         <h2 class="text-center mb-4 titles">Tecnologías que manejo</h2>
         <div class="row">
             <div class="col-md-4 mb-5">
-                <div class="card">
+                <div class="card card-tec">
                     <div class="card-body text-center">
                         <h5 class="card-title">HTML</h5>
                         <img src="https://www.w3.org/html/logo/badge/html5-badge-h-solo.png" width="64" height="64"
@@ -239,7 +244,7 @@
                 </div>
             </div>
             <div class="col-md-4 mb-5">
-                <div class="card">
+                <div class="card card-tec">
                     <div class="card-body text-center">
                         <h5 class="card-title">CSS</h5>
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/200px-CSS3_logo_and_wordmark.svg.png"
@@ -253,7 +258,7 @@
     </section>
 
     <!-- Sección de contacto -->
-    <div class="container">
+    <div class="container" id="contactForm">
         <div class="row">
             <div class="col-lg-6 mx-auto">
                 <div class="card mt-5 contact-form">
@@ -292,7 +297,7 @@
 
     <!-- Footer -->
 
-    <footer class="bg-dark text-white mt-3 p-2">
+    <footer class="text-white mt-3 p-2">
         <div class="container">
             <div class="row align-items-center">
                 <div class="text-center p-4">
@@ -306,7 +311,7 @@
 
                     <a href="https://github.com/lautarxtomas/">
                         <svg class="footer-icon m-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 250">
-                            <path fill="#161614"
+                            <path fill="currentColor"
                                 d="M128.001 0C57.317 0 0 57.307 0 128.001c0 56.554 36.676 104.535 87.535 121.46c6.397 1.185 8.746-2.777 8.746-6.158c0-3.052-.12-13.135-.174-23.83c-35.61 7.742-43.124-15.103-43.124-15.103c-5.823-14.795-14.213-18.73-14.213-18.73c-11.613-7.944.876-7.78.876-7.78c12.853.902 19.621 13.19 19.621 13.19c11.417 19.568 29.945 13.911 37.249 10.64c1.149-8.272 4.466-13.92 8.127-17.116c-28.431-3.236-58.318-14.212-58.318-63.258c0-13.975 5-25.394 13.188-34.358c-1.329-3.224-5.71-16.242 1.24-33.874c0 0 10.749-3.44 35.21 13.121c10.21-2.836 21.16-4.258 32.038-4.307c10.878.049 21.837 1.47 32.066 4.307c24.431-16.56 35.165-13.12 35.165-13.12c6.967 17.63 2.584 30.65 1.255 33.873c8.207 8.964 13.173 20.383 13.173 34.358c0 49.163-29.944 59.988-58.447 63.157c4.591 3.972 8.682 11.762 8.682 23.704c0 17.126-.148 30.91-.148 35.126c0 3.407 2.304 7.398 8.792 6.14C219.37 232.5 256 184.537 256 128.002C256 57.307 198.691 0 128.001 0Zm-80.06 182.34c-.282.636-1.283.827-2.194.39c-.929-.417-1.45-1.284-1.15-1.922c.276-.655 1.279-.838 2.205-.399c.93.418 1.46 1.293 1.139 1.931Zm6.296 5.618c-.61.566-1.804.303-2.614-.591c-.837-.892-.994-2.086-.375-2.66c.63-.566 1.787-.301 2.626.591c.838.903 1 2.088.363 2.66Zm4.32 7.188c-.785.545-2.067.034-2.86-1.104c-.784-1.138-.784-2.503.017-3.05c.795-.547 2.058-.055 2.861 1.075c.782 1.157.782 2.522-.019 3.08Zm7.304 8.325c-.701.774-2.196.566-3.29-.49c-1.119-1.032-1.43-2.496-.726-3.27c.71-.776 2.213-.558 3.315.49c1.11 1.03 1.45 2.505.701 3.27Zm9.442 2.81c-.31 1.003-1.75 1.459-3.199 1.033c-1.448-.439-2.395-1.613-2.103-2.626c.301-1.01 1.747-1.484 3.207-1.028c1.446.436 2.396 1.602 2.095 2.622Zm10.744 1.193c.036 1.055-1.193 1.93-2.715 1.95c-1.53.034-2.769-.82-2.786-1.86c0-1.065 1.202-1.932 2.733-1.958c1.522-.03 2.768.818 2.768 1.868Zm10.555-.405c.182 1.03-.875 2.088-2.387 2.37c-1.485.271-2.861-.365-3.05-1.386c-.184-1.056.893-2.114 2.376-2.387c1.514-.263 2.868.356 3.061 1.403Z" />
                         </svg>
                     </a>
@@ -326,37 +331,10 @@
     </footer>
 
 
-    <!-- <footer class="bg-dark text-white py-5 container-fluid">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h3 class="mb-3">Contáctame</h3>
-                    <p>Lautaro Martinez</p>
-                    <p>Teléfono: 3547 66-8602</p>
-                </div>
-                <div class="col-md-6">
-                    <h3 class="mb-3">Sígueme</h3>
-                    <ul class="list-inline mb-0">
-                        <li class="list-inline-item">
-                            <a href="https://www.linkedin.com/in/tu-perfil-de-linkedin/" target="_blank">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="currentColor" d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248c-.015-.709-.52-1.248-1.342-1.248c-.822 0-1.359.54-1.359 1.248c0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586c.173-.431.568-.878 1.232-.878c.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252c-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/></svg>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="https://github.com/tu-perfil-de-github/" target="_blank">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="256" height="250" viewBox="0 0 256 250"><path fill="#161614" d="M128.001 0C57.317 0 0 57.307 0 128.001c0 56.554 36.676 104.535 87.535 121.46c6.397 1.185 8.746-2.777 8.746-6.158c0-3.052-.12-13.135-.174-23.83c-35.61 7.742-43.124-15.103-43.124-15.103c-5.823-14.795-14.213-18.73-14.213-18.73c-11.613-7.944.876-7.78.876-7.78c12.853.902 19.621 13.19 19.621 13.19c11.417 19.568 29.945 13.911 37.249 10.64c1.149-8.272 4.466-13.92 8.127-17.116c-28.431-3.236-58.318-14.212-58.318-63.258c0-13.975 5-25.394 13.188-34.358c-1.329-3.224-5.71-16.242 1.24-33.874c0 0 10.749-3.44 35.21 13.121c10.21-2.836 21.16-4.258 32.038-4.307c10.878.049 21.837 1.47 32.066 4.307c24.431-16.56 35.165-13.12 35.165-13.12c6.967 17.63 2.584 30.65 1.255 33.873c8.207 8.964 13.173 20.383 13.173 34.358c0 49.163-29.944 59.988-58.447 63.157c4.591 3.972 8.682 11.762 8.682 23.704c0 17.126-.148 30.91-.148 35.126c0 3.407 2.304 7.398 8.792 6.14C219.37 232.5 256 184.537 256 128.002C256 57.307 198.691 0 128.001 0Zm-80.06 182.34c-.282.636-1.283.827-2.194.39c-.929-.417-1.45-1.284-1.15-1.922c.276-.655 1.279-.838 2.205-.399c.93.418 1.46 1.293 1.139 1.931Zm6.296 5.618c-.61.566-1.804.303-2.614-.591c-.837-.892-.994-2.086-.375-2.66c.63-.566 1.787-.301 2.626.591c.838.903 1 2.088.363 2.66Zm4.32 7.188c-.785.545-2.067.034-2.86-1.104c-.784-1.138-.784-2.503.017-3.05c.795-.547 2.058-.055 2.861 1.075c.782 1.157.782 2.522-.019 3.08Zm7.304 8.325c-.701.774-2.196.566-3.29-.49c-1.119-1.032-1.43-2.496-.726-3.27c.71-.776 2.213-.558 3.315.49c1.11 1.03 1.45 2.505.701 3.27Zm9.442 2.81c-.31 1.003-1.75 1.459-3.199 1.033c-1.448-.439-2.395-1.613-2.103-2.626c.301-1.01 1.747-1.484 3.207-1.028c1.446.436 2.396 1.602 2.095 2.622Zm10.744 1.193c.036 1.055-1.193 1.93-2.715 1.95c-1.53.034-2.769-.82-2.786-1.86c0-1.065 1.202-1.932 2.733-1.958c1.522-.03 2.768.818 2.768 1.868Zm10.555-.405c.182 1.03-.875 2.088-2.387 2.37c-1.485.271-2.861-.365-3.05-1.386c-.184-1.056.893-2.114 2.376-2.387c1.514-.263 2.868.356 3.061 1.403Z"/></svg>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer> -->
-
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
+
 
 </body>
 
